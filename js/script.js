@@ -1,46 +1,46 @@
-//                                                        -----__________Task #1____________------
-// let userName = prompt('Enter your Login');
+                                                      //  -----__________Task #1____________------
+let userName = prompt('Enter your Login');
 
 
-// while (userName.length > 10 && userName.length < 3) {
-//   alert('Длинна Логина недолжна привышать 10 символов и бменьше 3 символов');
-//   userName = prompt('Enter your Login');
-// }
-// while (userName == '' || userName == null) {
-//   alert('Логин не введен');
-//   userName = prompt('Enter your Login');
-// }
+while (userName.length > 10 && userName.length < 3) {
+  alert('Длинна Логина недолжна привышать 10 символов и бменьше 3 символов');
+  userName = prompt('Enter your Login');
+}
+while (userName == '' || userName == null) {
+  alert('Логин не введен');
+  userName = prompt('Enter your Login');
+}
 
-// let userPassword = +prompt('Enter your Password');
+let userPassword = +prompt('Enter your Password');
 
-// while(userPassword == '' || userPassword == null) {
-//   alert('Пароль не введен');
-//   userPassword = +prompt('Enter your Password');
-// }
+while(userPassword == '' || userPassword == null) {
+  alert('Пароль не введен');
+  userPassword = +prompt('Enter your Password');
+}
 
-// let user = {
-//   login: userName,
-//   password: userPassword
-// };
+let user = {
+  login: userName,
+  password: userPassword
+};
 
-// userAuthName = prompt('Enter your Login Auth');
-// while (userAuthName !== user.login) {
-//   alert('Такого пользователя не существует, попробуйте еще раз');
-//   userAuthName = prompt('Enter your Login again');
-// }
+userAuthName = prompt('Enter your Login Auth');
+while (userAuthName !== user.login) {
+  alert('Такого пользователя не существует, попробуйте еще раз');
+  userAuthName = prompt('Enter your Login again');
+}
 
-// userAuthPassword = +prompt('Enter your Password Auth');
-// while (userAuthPassword !== user.password) {
-//   alert('Не правильный пароль, попробуйте еще раз');
-//   userAuthPassword = +prompt('Enter your Password again');
-// }
+userAuthPassword = +prompt('Enter your Password Auth');
+while (userAuthPassword !== user.password) {
+  alert('Не правильный пароль, попробуйте еще раз');
+  userAuthPassword = +prompt('Enter your Password again');
+}
 
-// console.log(`Добро пожаловать ${userName}`);
-
-
+console.log(`Добро пожаловать ${userName}`);
 
 
-//                                                        -----__________Task #2____________------
+
+
+                                                       -----__________Task #2____________------
 
 
 var persons = [{
