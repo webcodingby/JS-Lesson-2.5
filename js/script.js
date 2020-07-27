@@ -78,26 +78,24 @@ let childList = [];
 
 
 for (let i = 0; i < persons.length; i++) {
-  
-
   if (persons[i].age >= 18){
+    // alert = prompt(`${persons[i].name} какая ваша проффесия`);
     parentList.push(persons[i]);
   }else {
     childList.push(persons[i]);
   }
-
-  
-  if (parentList[i].id === childList[i].parentId){
-    parentList[i].childName = childList.name;
-    console.log(parentList);
-  }
 }
 
-// for(let i = 0; i < parentList.length; i++){
-//   console.log(childList[i]);
-//   if (parentList[i].id === childList[i]) {
-//      persons[i].childName = childList.name;
-//   }
-// }
 
 
+for(let i=0, t=0; i< parentList.length;i++ && t++){
+  if (parentList[i].id == childList[t].parentId) {
+    parentList[i].child = '';
+  }else{
+    parentList[i].child = childList[t].name;
+    
+  }
+  
+}
+
+console.log(parentList);
